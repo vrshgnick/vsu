@@ -1,5 +1,5 @@
 <h1 align="center">
- important vsu [fkn] mini-projects 
+  vsu [fkn] mini-projects 
 </h1>
 
 <h3 align="center">
