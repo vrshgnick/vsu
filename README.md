@@ -1,5 +1,5 @@
 <h1 align="center">
-  vsu mini-projects 
+  vsu mini-projects  &#128187
 </h1>
 
 <h3 align="center">
