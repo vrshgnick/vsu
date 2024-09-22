@@ -7,12 +7,13 @@
 </h3>
 
 **first year**
-* AuCD
-* MLuTA
-* WebTech
-* introduction to programming (VVP)
-
-  <bd>
+> AuCD
+> 
+> MLuTA
+>
+> WebTech
+> 
+> introduction to programming (VVP)
 
 **second year**
-* BD
+> BD
