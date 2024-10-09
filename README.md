@@ -15,6 +15,8 @@
 > WebTech 
 >
 > introduction to programming (VVP)
+>
+>С
 
 **second year**
 > [!IMPORTANT]
