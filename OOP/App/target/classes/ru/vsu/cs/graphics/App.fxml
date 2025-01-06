@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="598.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vsu.cs.graphics.AppController">
+   <children>
+      <BorderPane prefHeight="598.0" prefWidth="1599.0">
+      
+          <bottom>
+            <Pane prefHeight="82.0" prefWidth="1599.0" />
+          </bottom>
+          <top>
+              <Pane>
+                  <children>
+                  <VBox prefHeight="99.0" prefWidth="1599.0">
+                     <children>
+                            <HBox spacing="10">
+                                <TextField fx:id="keyField" prefHeight="26.0" prefWidth="108.0" promptText="Index">
+                              <HBox.margin>
+                                 <Insets left="5.0" />
+                              </HBox.margin>
+                           </TextField>
+                                <TextField fx:id="valueField" prefHeight="26.0" prefWidth="105.0" promptText="Element" />
+                                <Button onAction="#onAddButtonClick" prefWidth="100.0" text="Add" />
+                                <Button onAction="#onAddAllButtonClick" prefWidth="100.0" text="Add first" />
+                                <Button onAction="#onAddLastButtonClick" prefWidth="140.0" text="Add Last" />
+                                <Button onAction="#onContainsButtonClick" prefWidth="140.0" text="Contains " />
+                                <Button onAction="#onContainsAllButtonClick" prefWidth="140.0" text="Contains all" />
+                                <Button onAction="#onGetButtonClick" text="Get" />
+                                <Button onAction="#onGetFirstButtonClick" text="Get First">
+                              <HBox.margin>
+                                 <Insets />
+                              </HBox.margin>
+                           </Button>
+                                <Button onAction="#onGetLastButtonClick" text="Get Last">
+                              <HBox.margin>
+                                 <Insets />
+                              </HBox.margin>
+                           </Button>
+                                <Button onAction="#onHashCodeButtonClick" text="hashCode">
+                              <HBox.margin>
+                                 <Insets />
+                              </HBox.margin>
+                           </Button>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                            </HBox>
+                        <HBox spacing="10">
+                           <children>
+                              <Button onAction="#onRemoveButtonClick" prefWidth="100.0" text="Remove">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button onAction="#onRemoveFirstButtonClick" prefWidth="100.0" text="Remove first" />
+                              <Button onAction="#onRemoveLastButtonClick" prefWidth="100.0" text="Remove Last" />
+                              <Button onAction="#OnIndexOfButtonClick" prefWidth="100.0" text="Index of" />
+                              <Button onAction="#onLastIndexOfButtonClick" prefWidth="100.0" text="Last index of" />
+                              <Button onAction="#onIsEmptyButtonClick" prefWidth="100.0" text="Is empty" />
+                              <Button onAction="#onReversedButtonClick" prefWidth="100.0" text="Reversed" />
+                              <Button onAction="#onSetButtonClick" prefWidth="100.0" text="Set" />
+                              <Button onAction="#onSizeButtonClick" prefWidth="100.0" text="Size" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                                   <TextField fx:id="addAllField" prefHeight="26.0" prefWidth="240.0" promptText="Enter pairs: index1=element1, index2=element2">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                                   <Button onAction="#onAddAllButtonClick" prefHeight="28.0" prefWidth="109.0" text="Add all">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <TextField fx:id="resultLabel" prefHeight="26.0" prefWidth="240.0" promptText="equal element">
+                                 <HBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                                   <Button onAction="#onEqualsButtonClick" prefHeight="28.0" prefWidth="113.0" text="Equals">
+                                 <HBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                                   <Button onAction="#onClearButtonClick" prefWidth="100.0" text="Clear">
+                                 <HBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  </children>
+              </Pane>
+          </top>
+         <left>
+            <HBox prefHeight="417.0" prefWidth="1210.0" BorderPane.alignment="CENTER">
+               <children>
+                    <ListView fx:id="mapArrayList" prefHeight="396.0" prefWidth="1218.0"/>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
